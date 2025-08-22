@@ -10,14 +10,14 @@
     "subtitle": "Built with Zara",
     "description": "PUMP Launchpad is a Base Mini App built with Zara.",
     "iconUrl": "https://0co.to/images/zara-2.png",
-    "homeUrl": "https://d1274885-63f7-4d83-a7c7-65b4b104da09.vistara.dev",
-    "splashImageUrl": "https://dummyimage.com/200x200/0a0b0d/ffffff.png&text=Splash",
+    "homeUrl": "https://d127488563f74d83a7c765b4b104da09-z8a2-esvayeyub-vistara.vercel.app",
+    "splashImageUrl": "https://d127488563f74d83a7c765b4b104da09-z8a2-esvayeyub-vistara.vercel.app/splash.png",
     "splashBackgroundColor": "#000000",
-    "heroImageUrl": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=Hero",
+    "heroImageUrl": "https://d127488563f74d83a7c765b4b104da09-z8a2-esvayeyub-vistara.vercel.app/image.png",
     "tagline": "PUMP Launchpad",
     "screenshotUrls": [
-      "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=Shot1",
-      "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=Shot2"
+      "https://d127488563f74d83a7c765b4b104da09-z8a2-esvayeyub-vistara.vercel.app/screenshot.png",
+      "https://d127488563f74d83a7c765b4b104da09-z8a2-esvayeyub-vistara.vercel.app/screenshot.png"
     ],
     "primaryCategory": "social",
     "tags": [
@@ -25,6 +25,6 @@
       "miniapp",
       "onchainkit"
     ],
-    "webhookUrl": "https://d1274885-63f7-4d83-a7c7-65b4b104da09.vistara.dev/api/webhook"
+    "webhookUrl": "https://d127488563f74d83a7c765b4b104da09-z8a2-esvayeyub-vistara.vercel.app/api/webhook"
   }
 }
