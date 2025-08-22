@@ -1,4 +1,3 @@
-
 export interface Project {
   projectId: string
   projectName: string
@@ -6,8 +5,8 @@ export interface Project {
   tokenSymbol: string
   fundingGoal: number
   currentFunds: number
-  startDate: Date
-  endDate: Date
+  startDate: Date | string
+  endDate: Date | string
   status: 'pending' | 'active' | 'completed' | 'failed' | 'refunded'
   ownerAddress: string
   contractAddress?: string
@@ -15,13 +14,19 @@ export interface Project {
   description?: string
   imageUrl?: string
   socialLinks?: SocialLinks
+  teamMembers?: TeamMember[]
+  links?: ProjectLink[]
 }
 
 export interface TokenomicsDetails {
   totalSupply: number
   decimals: number
+  initialPrice: number
   stakingTiers: StakingTier[]
   gambleFiElements?: GambleFiElement[]
+  distribution?: Record<string, number>
+  details?: string
+  stakingDetails?: string
 }
 
 export interface StakingTier {
@@ -30,7 +35,7 @@ export interface StakingTier {
   lockPeriodDays: number
   rewardRate: number
   totalStaked: number
-  minStake: number
+  minStake?: number
   maxStake?: number
 }
 
@@ -51,8 +56,8 @@ export interface Investor {
   projectId: string
   walletAddress: string
   contributionAmount: number
-  contributionCurrency: 'SOL' | 'USDC'
-  timestamp: Date
+  contributionCurrency: ContributionCurrency
+  timestamp: Date | string
   transactionHash?: string
 }
 
@@ -63,4 +68,32 @@ export interface SocialLinks {
   website?: string
 }
 
+export interface TeamMember {
+  id: string
+  name: string
+  role: string
+  walletAddress: string
+  avatarUrl?: string
+  bio?: string
+}
+
+export interface ProjectLink {
+  title: string
+  url: string
+  type?: 'website' | 'whitepaper' | 'github' | 'social' | 'other'
+}
+
 export type ContributionCurrency = 'SOL' | 'USDC'
+
+export interface ToastMessage {
+  id: string
+  type: 'success' | 'error' | 'info' | 'warning'
+  message: string
+  duration?: number
+}
+
+export interface FormValidationResult {
+  valid: boolean
+  errors: { field: string; message: string }[]
+}
+
