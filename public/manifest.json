@@ -1,0 +1,14 @@
+{
+  "name": "PUMP Launchpad",
+  "description": "PUMP Launchpad is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://d1274885-63f7-4d83-a7c7-65b4b104da09.vistara.dev",
+  "properties": {
+    "app": {
+      "name": "PUMP Launchpad",
+      "description": "PUMP Launchpad is a Base Mini App built with Zara.",
+      "url": "https://d1274885-63f7-4d83-a7c7-65b4b104da09.vistara.dev",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}
